@@ -3,17 +3,40 @@
     <html lang="pt-br">
     <head>
         <title>HTML</title>
+        <style>
+
+            h2 {
+                color:springgreen;   
+                font-size: 2em; 
+            }
+
+            body{
+                background-color: rgb(255, 400, 200);
+                font-size: 20px;
+            }
+
+            .font-link{
+                color:red;
+                font-weight: bold;
+                line-height:40px;
+            }
+            p{
+                font-family: monospace;
+            }
+        </style>
     </head>
     <body>
         <h1>Exercícios</h1>
         <ul>
-            <li><a href="#Rafael">Rafael Moura</a></li>
-            <li><a href="#Gabriel">Gabriel Max</a></li>    
-            <li><a href="#Hugo">Hugo Braga</a></li>
+            <li><a class="font-link" href="#Rafael">Rafael Moura</a></li>
+            <li><a class="font-link" href="#Gabriel">Gabriel Max</a></li>    
+            <li><a class="font-link" href="#Hugo">Hugo Braga</a></li>
         </ul>
         
         <a href="https://www.google.com/" target="_blank">GOOGLE</a>
         <img src="LogoTrybe.png" width="600px" alt="Logo da Trybe">
+        
+        <h2>Conteúdo sobre os alunos:</h2>
 
         <p id="Rafael">Nome: Rafael Moura<br>Turma: 8<br>Curso: Desenvolvedor Full Stack<br>Instituição: Trybe</p>
         <img src="https://ca.slack-edge.com/TMDDFEPFU-U01BJ3A3UKB-2025444adc80-512" width="100px" alt="Logo da Trybe">   
