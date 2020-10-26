@@ -9,6 +9,6 @@ for(let indice = 0; indice < numbers.length; indice += 1) {
 
  if(soma / media > 20){
     console.log("valor maior que 20");
- }else{
+}else{
     console.log("valor menor ou igual a 20");
- }
+}
