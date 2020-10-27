@@ -1,13 +1,12 @@
 let numeros =[];
-let resultado = [];
+let resultadoDivisao =[];
 
-for(let contador = 0; contador < numeros.length; contador += 1){
-    for(let indice = 1; indice <= 25; indice += 1){
-        numeros.push(indice);
-    }
-    let divisao = numeros[contador] / 2;
-    console.log(divisao);
-    resultado.push(divisao);
+for(let indice = 1; indice <= 25; indice += 1){
+    numeros.push(indice);
+}
+for(contador = 1; contador < numeros.length; contador += 1){
+    let Divisao = numeros[contador] / 2;
+    resultadoDivisao.push(Divisao);
 }
 
-console.log(resultado);
+console.log(resultadoDivisao);
