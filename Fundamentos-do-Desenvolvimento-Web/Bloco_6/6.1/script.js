@@ -67,3 +67,64 @@ form.addEventListener('blur', function(){
         this.value = '';
     }   
 })
+
+// não deixa atualizar a page ao clicar em enviar
+const button = document.getElementById('enviar');
+
+button.addEventListener('click', function(event) {
+    event.preventDefault();
+})
+
+//Validação do form inteiro
+let camposInput  = ''
+let ampoTipo     = '' 
+let  div         = '' 
+let CamposVazios = [];
+let nameValue    = '';
+
+button.addEventListener('click', function() {
+
+    for (key in camposInput) {
+
+        camposInput = document.querySelectorAll('[required]');
+        campoTipo   = document.querySelectorl('#button-tipo');
+        section     = document.getElementById('curriculo-pronto');
+        p           = document.createElement('p');
+
+        nameValue = camposInput[key].name + ': ' + camposInput[key].value;
+        alert(nameValue);
+
+        if (camposInput[key].value == '') {
+            CamposVazios.push(camposInput[key].name);
+        } else {
+            section.appendChild(p);
+            p.className = 'curriculo-pronto';
+            p.innerHTML =  nameValue;
+        }
+    }
+    if (CamposVazios.length >= 1) {
+        alert('O preenchimento do(s) campo(s) ' + CamposVazios + ' são obrigatório(s)!');
+        return false
+    } else {
+      div.innerHTML = nameValue;
+    }
+})
+
+//reseta o form
+
+const reset = document.getElementById("limpar");
+
+reset.addEventListener('click', function() {
+    let curriculoPronto = document.getElementsByClassName('curriculo-pronto');
+    camposInput = document.querySelectorAll('[required]');
+    campoTipo   = document.querySelectorAll('#button-tipo');
+    console.log(campoTipo);
+    for (key in campoTipo) {
+        campoTipo[key].value = '';
+    }
+    
+
+    for (key in camposInput) {
+        camposInput[key].value = '';
+    }
+})

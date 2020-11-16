@@ -37,12 +37,11 @@
 
             <p>Tipo:</p>
 
-            <label for="button-apto">
-                <input type="radio" name="tipo" value="apto" id="button-apto">Apartamento
+            <label for="button-tipo">
+                <input type="radio" name="tipo" value="apto" id="button-tipo">Apartamento
+                <input type="radio" name="tipo" value="casa" id="button-tipo">Casa
             </label> 
-            <label for="button-casa">
-                <input type="radio" name="tipo" value="casa" id="button-casa">Casa
-            </label> 
+            
         </fieldset>
         <hr>
         <fieldset>
@@ -63,8 +62,13 @@
             </label>
         </fieldset>
     </form> 
-    <button type="submit">Enviar</button>
-    <button type="reset">Limpar</button>
+    <section id="curriculo-pronto">
+        
+    </section>
+    
+    <button type="submit" id="enviar" >Enviar</button>
+    <button type="reset" id="limpar">Limpar</button>
+    
     <script src="script.js"></script>
 </body>
 </html>
