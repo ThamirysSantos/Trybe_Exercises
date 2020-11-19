@@ -1,17 +1,23 @@
 const n = 5;
 let caracter = '*';
 let espaco = '';
-let posicao = n;
+let centroDoTriangulo = (n + 1) / 2;
+let direita = centroDoTriangulo;
+let esquerda = centroDoTriangulo;
 
-for (let index = 0; index < n; index += 1) {
-    for(let linha = 0; linha <= n; linha += 1) {
-        if (linha < posicao) {
-            espaco += ' ';
+
+for (let index = 0; index <= centroDoTriangulo; index += 1) {
+    for (let linha = 1; linha <= n; linha += 1) {
+        if (linha > direita && linha < esquerda) {
+            espaco = espaco + caracter;
         } else {
-            espaco += caracter;
+            espaco = espaco + ' ';
         }
     }
     console.log(espaco);
-    posicao -= 1;
+
     espaco = '';
+    direita -= 1;
+    esquerda +=1;
 }
+
