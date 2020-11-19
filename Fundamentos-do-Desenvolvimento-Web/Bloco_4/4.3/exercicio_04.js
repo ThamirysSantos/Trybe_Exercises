@@ -15,9 +15,9 @@ for (let index = 0; index <= centroDoTriangulo; index += 1) {
         }
     }
     console.log(espaco);
-    
+
     espaco = '';
     direita -= 1;
     esquerda +=1;
-};
+}
 
