@@ -4,71 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cadastro de Currículo</h1>
-    <form action="" method="GET" id="form">
+    <header class="header">
+      <h1>Cadastro de Currículo</h1>
+    </header>
+    <form action="" method="GET" id="form" class="form">
         <fieldset>
             <label for="input-nome">Nome Completo:
-                <input type="text" name="nome" maxlength="40" id="input-nome" placeholder="Digite seu nome completo" required>
+                <input type="text" name="nome" maxlength="40" id="input-nome" class="required" placeholder="Digite seu nome completo" required>
             </label>
             <br>
             <label for="input-email">E-mail:
-                <input type="text" name="e-mail" maxlength="50" id="input-email" placeholder="Digite seu e-mail" required>
-            </label>
-            <br>
-           <label for="input-cpf">CPF:
-                <input type="text" name="cpf" maxlength="11" id="input-cpf" placeholder="Digite seu cpf" required>
+                <input type="text" name="e-mail" maxlength="50" id="input-email" class="required" placeholder="Digite seu e-mail" required>
             </label>
             <br>
             <label for="input-endereco">Endereço:
-                <input type="text" name="endereco" maxlength="200" id="input-endereco" placeholder="Digite seu endereço" required>
+                <input type="text" name="endereco" maxlength="200" id="input-endereco" class="required" placeholder="Digite seu endereço" required>
             </label>
             <br>
             <label for="input-cidade">Cidade:
-                <input type="text" name="cidade" maxlength="200" id="input-cidade" placeholder="Digite sua cidade" required>
+                <input type="text" name="cidade" maxlength="200" id="input-cidade" class="required" placeholder="Digite sua cidade" required>
             </label>
             <br>
             <label for="input-estado">Estado:
-                <select name="estado" id="input-estado" required>
+                <select name="estado" id="input-estado" class="required" required>
                 </select>
             </label>
             <br>
-
-            <p>Tipo:</p>
-
-            <label for="button-tipo">
-                <input type="radio" name="tipo" value="apto" id="button-tipo">Apartamento
-                <input type="radio" name="tipo" value="casa" id="button-tipo">Casa
-            </label> 
+            <div class="type">
+                <p>Tipo:</p>
+                <label for="button-tipo" class="required>
+                    <div class="apto">
+                        <input type="radio" name="tipo" value="apto" id="button-tipo">Apartamento
+                    </div>
+                    <div class="casa">
+                        <input type="radio" name="tipo" value="casa" id="button-tipo" class="required">Casa
+                    </div>
+                </label> 
+            </div>
             
         </fieldset>
-        <hr>
         <fieldset>
             <label for="resumo-curriculo">Resumo do Currículo:
-                <textarea name="resumo" id="resumo-curriculo" cols="30" rows="10" maxlength="1000" placeholder="resuma o seu currículo aqui" required></textarea>
+                <textarea name="resumo" id="resumo-curriculo" class="required" cols="30" rows="10" maxlength="1000" placeholder="resuma o seu currículo aqui" required></textarea>
             </label>
             <br>
             <label for="input-cargo">Cargo:
-                <input type="text" name="cargo" id="input-cargo" malength="40" placeholder="Digite o Cargo" required>
+                <input type="text" name="cargo" id="input-cargo" class="required" malength="40" placeholder="Digite o Cargo" required>
             </label>
             <br>
             <label for="input-descricao-cargo">Descrição do Cargo:
-                <input type="text" name="descricao-cargo" id="input-descricao-cargo" maxlength="500" placeholder="Digite a Descrição do Cargo" required>
+                <input type="text" name="descricao-cargo" id="input-descricao-cargo" class="required" maxlength="500" placeholder="Digite a Descrição do Cargo" required>
             </label>
             <br>
             <label for="data-inicio">Data de início:
-                <input type="text" name="data" id="data-inicio" placeholder="dd/mm/aaaa" required>
+                <input type="text" name="data" id="data-inicio" class="required" placeholder="dd/mm/aaaa" required>
             </label>
         </fieldset>
     </form> 
-    <section id="curriculo-pronto">
-        
-    </section>
-    
-    <button type="submit" id="enviar" >Enviar</button>
-    <button type="reset" id="limpar">Limpar</button>
-    
+    <div id="curriculo-pronto" class="complited"></div>
+    <section>
+        <div class="buttons">
+            <button type="submit" id="enviar" >Enviar</button>
+            <button type="reset" id="limpar">Limpar</button>
+        </div>
+    </section>   
+    <footer>
+        <h6>Desenvolvido por Thamirys Gonçalves</h6>
+    </footer> 
     <script src="script.js"></script>
 </body>
 </html>

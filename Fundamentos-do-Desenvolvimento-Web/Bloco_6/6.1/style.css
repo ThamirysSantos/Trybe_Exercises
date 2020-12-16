@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(241, 248, 248);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.buttons button {
+    width: 100px;
+}
+
+.complited {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: center;
+    height: 50px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    height: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.form fieldset {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    font-family: fantasy, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form fieldset label {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
